@@ -153,10 +153,10 @@ void setup() {
      setRgbVariable();
 
      //Expose the rgb variables on the Spark Cloud
-     Spark.variable("rgb", &rgb, STRING);
+     Particle.variable("rgb", rgb, STRING);
 
      //Expose the setRgb function on the Spark Cloud
-     Spark.function("setRgb",setRgb);
+     Particle.function("setRgb",setRgb);
 
      //Initialize serial communication with the host
      //This is used for debug purposes only
